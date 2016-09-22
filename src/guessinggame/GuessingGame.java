@@ -5,6 +5,8 @@
  * DESCRIPTION: This program is a game in which a random number 1-20 is generated, and
  *              the user has to guess the number. Each incorrect guess gives the user
  *              a higher/lower hint.
+ *              
+ * GITHUB:      "GuessingGame"
  */
 package guessinggame;
 
