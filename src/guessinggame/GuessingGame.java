@@ -2,7 +2,7 @@
  * NAME:        Chris Hitchcock
  * DATE:        20/09/16
  * FILENAME:    GuessingGame.java
- * DESCRIPTION: This program is a game in which a random number 1-20 is generated, and
+ * DESCRIPTION: This program is a game in which a random number 1-100 is generated, and
  *              the user has to guess the number. Each incorrect guess gives the user
  *              a higher/lower hint.
  *              
@@ -36,15 +36,15 @@ public class GuessingGame {
         Scanner kb = new Scanner(System.in);
 
         //Generate a random number ONCE before starting loop
-        answer = r.nextInt(20) + 1;
+        answer = r.nextInt(100) + 1;
 
         //Loop to continue until user guesses right
         while (correct == false) {
             //Obtain the guess from the user
-            System.out.print("Enter a number between 1 and 20: ");
+            System.out.print("Enter a number between 1 and 100: ");
             guess = kb.nextInt();
             
-            if (guess>=1&&guess<=20)
+            if (guess>=1&&guess<=100)
             {
                 //Check if answer is correct or not
                 if (answer == guess) {
@@ -57,7 +57,7 @@ public class GuessingGame {
                     giveHint();
                 }
             } else {
-                System.out.println("Please enter a valid number (1-20).");
+                System.out.println("Please enter a valid number (1-2100).");
                 }
         }
     }
